@@ -1,0 +1,5 @@
+---
+- name: Firewall playbook
+  hosts: windows
+  tasks:
+      - win_shell: Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False

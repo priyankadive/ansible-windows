@@ -1,0 +1,9 @@
+---
+- name: Install windows server backup
+  hosts: windows
+  tasks:
+    - name: "Install windows server backup"
+      win_feature:
+        name: "Windows-Server-Backup"
+        state: present
+        restart: True

@@ -1,0 +1,9 @@
+---
+- name: set timezone
+  hosts: windows
+  tasks:
+    - name: "Enable .NET Framework 3.5"
+      win_feature:
+        name: "WAS-NET-Environment"
+        state: present
+        restart: True

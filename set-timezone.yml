@@ -1,0 +1,7 @@
+---
+- name: set timezone
+  hosts: windows
+  tasks:
+      - name: Set timezone to 'Central Standard Time'
+        win_timezone:
+          timezone: Central Standard Time

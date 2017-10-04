@@ -1,0 +1,5 @@
+---
+- name: disable auto backup setting but remains the service up and running
+  hosts: windows
+  tasks:
+    - win_shell: Remove-WBPolicy -All -Force
